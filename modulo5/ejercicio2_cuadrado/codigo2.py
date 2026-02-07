@@ -8,15 +8,15 @@ def es_cuadrado_perfecto(n):
     # Asi que utiliza if para ver si n es menos que 0,
     # si lo es que devuelva un Falso para nuestro Booleano
     # probando el GUI
-   if n < 0:
-    return False
-
+    if n < 0:
+        return False
+    return math.isqrt(n) ** 2 == n
     # Calcular la raíz cuadrada entera del número
-    raiz_entera = int(n ** 0.5)  
+    #raiz_entera = int(n ** 0.5)  
 
     # Verificar si la raíz al cuadrado es igual al número original
     #return raiz_entera * raiz_entera == n
-    return math.isqrt(n) ** 2 == n
+    #return math.isqrt(n) ** 2 == n
 
 # Entrada del usuario
 num_usuario = int(input("¿Qué número te gustaría revisar si es cuadrado perfecto? "))
