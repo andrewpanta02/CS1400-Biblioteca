@@ -7,6 +7,7 @@ def es_cuadrado_perfecto(n):
     # TODO 1: Si el número es negativo, no puede ser un cuadrado perfecto. 
     # Asi que utiliza if para ver si n es menos que 0,
     # si lo es que devuelva un Falso para nuestro Booleano
+    # probando el GUI
    if n < 0:
     return False
 
