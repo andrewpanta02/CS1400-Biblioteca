@@ -10,12 +10,31 @@ def porcentaje_a_gpa(porcentaje):
     if porcentaje >= 93:
         return 4.0
     # TODO 1: Completa la función para convertir el porcentaje a GPA usando la escala estándar.
-
+    elif porcentaje >= 90:
+        return 3.7
+    elif porcentaje >= 87:
+        return 3.3
+    elif porcentaje >= 87:
+        return 3.3
+    elif porcentaje >= 83:
+        return 3.0
+    elif porcentaje >= 80:
+        return 2.7
+    elif porcentaje >= 77:
+        return 2.3
+    elif porcentaje >= 73:
+        return 2.0
+    elif porcentaje >= 70:
+        return 1.7
+    elif porcentaje >= 67:
+        return 1.3
+    elif porcentaje >= 65:
+        return 1.0
     else:
         return 0.0
 
 # TODO #2: Pedir cuántas materias tiene el usuario, y asignarlo a un variable (recuerda convertirlo a un entero).
-
+num_materias = int(input("cuantas materias tienes?: "))
 
 
 # Inicializar variables para acumular puntos y créditos
@@ -24,7 +43,7 @@ total_creditos = 0
 
 for i in range(num_materias):
     porcentaje = float(input(f"Ingrese el porcentaje actual de la materia #{i+1} (ejemplo: 87.5): "))
-    creditos = float(input(f"Ingrese los créditos de la materia #{i+1}: "))
+    creditos = loat(input(f"Ingrese los créditos de la materia #{i+1}: "))
     
     gpa = porcentaje_a_gpa(porcentaje)
     total_puntos += gpa * creditos
