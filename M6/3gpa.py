@@ -14,8 +14,6 @@ def porcentaje_a_gpa(porcentaje):
         return 3.7
     elif porcentaje >= 87:
         return 3.3
-    elif porcentaje >= 87:
-        return 3.3
     elif porcentaje >= 83:
         return 3.0
     elif porcentaje >= 80:
@@ -43,7 +41,7 @@ total_creditos = 0
 
 for i in range(num_materias):
     porcentaje = float(input(f"Ingrese el porcentaje actual de la materia #{i+1} (ejemplo: 87.5): "))
-    creditos = loat(input(f"Ingrese los créditos de la materia #{i+1}: "))
+    creditos = float(input(f"Ingrese los créditos de la materia #{i+1}: "))
     
     gpa = porcentaje_a_gpa(porcentaje)
     total_puntos += gpa * creditos
@@ -55,11 +53,18 @@ for i in range(num_materias):
 # entonces calcula el GPA final y muestra el resultado
 # de lo contrario muestra un mensaje indicando que no se ingresaron materias válidas.
 # Si no, imprimir un mensaje indicando que no se ingresaron materias válidas o algo similar.
+if total_creditos > 0:
+    gpa_final = total_puntos / total_creditos
+    print(f"tu GPA estimado para el semestre es: {gpa_final:.2f}")
+
+else:
+    print("no se ingresaron materias validas")
+    
 
 # TODO #4: En que otra situacion podrias usar una funcion como esta?
+# quizas en una calculadora
 # 
-# 
-#     
+#
 """
 #Salida esperada
 ¿Cuántas materias tienes este semestre? 3
