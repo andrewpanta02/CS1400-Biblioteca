@@ -5,15 +5,16 @@ from gestion_tienda import agregar_producto, buscar_precio, listar_productos
 
 def mostrar_menu():
     # Aqui se muestra el menú de opciones al usuario
-    # El usuario puede elegir entre ver el inventario, agregar un producto, buscar un precio o salir.
-    # El programa seguirá ejecutándose hasta que el usuario elija salir.
-    # TODO #1 Completa el menú de opciones imprimiendo un mensaje y las opciones.
-    
+    print("\n===== MENÚ DE LA TIENDA =====")
+    print("1. Ver inventario")
+    print("2. Agregar producto")
+    print("3. Buscar precio de producto")
+    print("4. Salir")
 
 def ejecutar_programa():
-    # TODO #2 iniciar un diccionario vacio
-    
-    
+    # iniciar un diccionario vacio
+    mi_inventario = {}
+
     while True:
         mostrar_menu()
         opcion = input("Seleccione una opción (1-4): ")
