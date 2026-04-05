@@ -20,3 +20,8 @@ def ejecutar_demo():
 
 # TODO Paso 6.
 # Llama a ejecutar_demo() dentro de un bloque if __name__ == "__main__":
+
+#probando
+
+if __name__ == "__main__":
+    ejecutar_demo()
