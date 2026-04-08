@@ -6,6 +6,7 @@ def limpiar_y_tokenizar(texto):
     Devuelve una lista de palabras (tokens).
     """
     # Paso 1: Convertir a minúsculas con .lower()
+<<<<<<< HEAD
     texto = texto.lower()
     
     # Paso 2: Reemplazos . con espacio y , con espacio usando .replace() (puedes añadir más si es necesario)
@@ -13,6 +14,14 @@ def limpiar_y_tokenizar(texto):
     
     # Paso 3: Dividir en palabras usando .split()
     palabras = texto.split()
+=======
+    
+    
+    # Paso 2: Reemplazos . con espacio y , con espacio usando .replace() (puedes añadir más si es necesario)
+
+    
+    # Paso 3: Dividir en palabras usando .split()
+>>>>>>> main
     
     # Devuelve la lista de palabras
     return palabras

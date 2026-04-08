@@ -19,7 +19,11 @@ def ejecutar_demo():
     print(f"Resultado: {resultado}")
 
 # TODO Paso 6.
+<<<<<<< HEAD
 # Llama a ejecutar_demo() dentro de un bloque if __name__ == "__main__":
 
 if __name__ == "__main__":
     ejecutar_demo()
+=======
+# Llama a ejecutar_demo() dentro de un bloque if __name__ == "__main__":
+>>>>>>> main

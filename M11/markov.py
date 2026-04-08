@@ -23,6 +23,7 @@ def generar_texto(modelo, palabra_inicial, longitud):
     Genera una secuencia de palabras basada en las probabilidades del modelo.
     """
     # TODO: Paso 4. Inicializa la frase con la palabra inicial
+<<<<<<< HEAD
     frase_generada = [palabra_inicial]
 
     # TODO: Paso 5. Bucle for con un if/else para generar palabras hasta
@@ -36,6 +37,13 @@ def generar_texto(modelo, palabra_inicial, longitud):
             palabra_actual = siguiente
         else:
             break
+=======
+
+
+    # TODO: Paso 5. Bucle for con un if/else para generar palabras hasta
+    #  alcanzar la longitud deseada. 
+    
+>>>>>>> main
 
     # Unir y devolver
     return " ".join(frase_generada)
