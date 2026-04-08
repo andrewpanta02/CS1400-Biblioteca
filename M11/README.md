@@ -1,6 +1,4 @@
 M11 - Modularizacion
-<<<<<<< HEAD
-#Ajustando el Readme
 =======
 >>>>>>> main
 
