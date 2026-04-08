@@ -16,5 +16,3 @@ def limpiar_y_tokenizar(texto):
     
     # Devuelve la lista de palabras
     return palabras
-
-#prueba
